@@ -43,19 +43,12 @@ public class ActivityInstance : MonoBehaviour
         return HoursRemaining;
     }
 
-    private void Save()
+    public void Save()
     {
-        HoursRemaining = ((float)(DateTime.Now - StartTime).TotalHours);
-        PlayerPrefs.SetFloat(Activity.Name + "_hours", Activity.Hours);
-    }
+        Debug.Log("Saving");
+        HoursRemaining = HoursRemaining - (float)(DateTime.Now - StartTime).TotalHours;
+        PlayerPrefs.SetFloat(Activity.Name + "_hours", HoursRemaining);
 
-    private void OnApplicationQuit()
-    {
-        Save();
-    }
-
-    private void OnApplicationPause(bool pause)
-    {
-        Save();
+        PlayerPrefs.DeleteKey(Activity.Name + "_started");
     }
 }

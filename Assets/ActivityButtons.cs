@@ -14,11 +14,8 @@ public class ActivityButtons : MonoBehaviour
     ActivityInstance Instance1;
     ActivityInstance Instance2;
 
-
     private void Start()
     {
-        // assume that no activity is in progress rn
-
         // load button 1 data
         Instance1 = Button1.AddComponent<ActivityInstance>();
         Instance1.Activity = Activity1;
@@ -42,9 +39,13 @@ public class ActivityButtons : MonoBehaviour
     {
         ActivityButton button = f_button.GetComponent<ActivityButton>();
 
-        int minutes = ((int)Math.Ceiling(f_instance.LoadHours() * 60));
-        int total = ((int)Math.Ceiling(f_instance.Activity.Hours * 60));
+        float time = f_instance.LoadHours();
 
-        button.InitButton(f_instance.Activity.Name, minutes, total);
+        int hours = (int)Math.Truncate(time);
+        int minutes = (int)Math.Ceiling((time - Math.Truncate(time)) * 60f);
+
+        float percent_remaining = time / f_instance.Activity.Hours;
+
+        button.InitButton(f_instance.Activity.Name, hours, minutes, percent_remaining);
     }
 }
