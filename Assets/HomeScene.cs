@@ -10,4 +10,10 @@ public class HomeScene : MonoBehaviour
             SceneManager.LoadScene("Activity");
         }
     }
+
+    public void OnResetButtonPressed()
+    {
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("Home");
+    }
 }
