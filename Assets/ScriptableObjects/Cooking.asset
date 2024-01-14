@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6946d6f42ba9724c865935e3de22ab5, type: 3}
+  m_Name: Cooking
+  m_EditorClassIdentifier: 
+  Name: Cooking
+  Reason: '- Need to eat - I enjoy - Relaxing - Can multitask w lectures - Might
+    need to meal prep more - This excludes when I cook with lectures'
+  Hours: 1
+  Hint: meal prep for 5 meals while watching lectures!

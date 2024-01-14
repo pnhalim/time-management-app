@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6946d6f42ba9724c865935e3de22ab5, type: 3}
+  m_Name: Non-Christian Friends
+  m_EditorClassIdentifier: 
+  Name: Non-Christian Friends
+  Reason: '- Already pretty close to Adhav, Jamie, Nathan, Hannah, Huiyi, Zainab?
+    and fun to hangout with them  - Want them to know Jesus'' love'
+  Hours: 4
+  Hint: once per week
