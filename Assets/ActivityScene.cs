@@ -27,6 +27,8 @@ public class ActivityScene : MonoBehaviour
         }
         else
         {
+            Application.targetFrameRate = 20;
+
             ActivityScriptableObject curr = FindActivity(PlayerPrefs.GetString("CurrentActivity"));
 
             if (curr == null)
@@ -97,7 +99,7 @@ public class ActivityScene : MonoBehaviour
 
             UpdateFill((totalHours - hours) / totalHours);
 
-            yield return new WaitForSeconds(30f);
+            yield return new WaitForSeconds(5f);
         }
     }
 
@@ -155,5 +157,4 @@ public class ActivityScene : MonoBehaviour
 
         Debug.Log(curr);
     }
-
 }

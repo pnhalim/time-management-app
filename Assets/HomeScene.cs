@@ -9,6 +9,7 @@ public class HomeScene : MonoBehaviour
         {
             SceneManager.LoadScene("Activity");
         }
+        Application.targetFrameRate = 60;
     }
 
     public void OnResetButtonPressed()
